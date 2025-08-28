@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snake Eyes Showdown</title>
+        <link href="styles/game.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <div class="userInfo"></div>
+            <div class="bankroll"></div>
+            <div class="username"></div>
+            <div class="phone"></div>
+            <div class="city"></div>
+            <div class="email"></div>
+            <div class="lastVisit"></div>
+        </div>
+
+        <div class="notName"></div>
+
+        <div class="gameCenter">
+            <h1>Snake Eyes Showdown</h1>
+
+            <form id="betForm">
+                <label for="targetInput">Target Number (3-12):</label>
+                <input type="number" id="targetInput" class="targetInput" />
+                <div class="errorMsg" id="targetInputError"></div>
+
+                <label for="betInput">Bet Amount:</label>
+                <input type="number" id="betInput" class="betInput" />
+                <div class="errorMsg" id="betInputError"></div>
+
+                <button id="playButton" type="button">Start Game</button>
+            </form>
+
+            <div class="diceArea">
+                <img id="dice1" src="./media/dice1.png" alt="Dice 1">
+                <img id="dice2" src="./media/dice1.png" alt="Dice 2">
+            </div>
+
+            <button id="rollButton" disabled>Roll Dice</button>
+
+            <div class="result" id="resultMessage"></div>
+
+            <button id="leaveGame">Leave Game</button>
+        </div>
+
+        <script src="./js/game.js"></script>
+    </body>
+</html>
