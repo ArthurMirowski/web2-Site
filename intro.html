@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snake Eyes Showdown Form</title>
+        <link href="styles/intro.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1>Snake Eyes Showdown</h1>
+            <form id="gameForm" novalidate>
+                <div id="formFormat">
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName"
+                            placeholder="Enter your first name" size="30" />
+                    </div>
+                    <div class="errorMsg" id="firstNameError"></div>
+
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName"
+                            placeholder="Enter your last name" size="30" />
+                    </div>
+                    <div class="errorMsg" id="lastNameError"></div>
+
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username"
+                            placeholder="Choose a username" size="30" />
+                    </div>
+                    <div class="errorMsg" id="usernameError"></div>
+
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone"
+                            placeholder="(xxx) xxx-xxxx" size="20" />
+                    </div>
+                    <div class="errorMsg" id="phoneError"></div>
+
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city"
+                            placeholder="Enter your city" size="20" />
+                    </div>
+                    <div class="errorMsg" id="cityError"></div>
+
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="email@example.com" size="50" />
+                    </div>
+                    <div class="errorMsg" id="emailError"></div>
+
+                    <div>
+                        <label for="money">Starting Amount of Money:</label>
+                        <input type="number" id="money" name="money"
+                            placeholder="Enter starting amount" size="10" />
+                    </div>
+                    <div class="errorMsg" id="moneyError"></div>
+
+                    <button type="submit">Start Game</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Snake Eyes Showdown. All rights reserved.</p>
+        </footer>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script src="./js/intro.js"></script>
+
+    </body>
+</html>
